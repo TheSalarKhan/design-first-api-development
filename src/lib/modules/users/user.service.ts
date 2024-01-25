@@ -7,7 +7,7 @@ import { UsersService } from '../../../api/resources/users/users.service';
 export class UsersServiceImpl extends UsersService {
   async createUser(input: CreateUserDto): Promise<SuccessResponseDto> {
     const returnValue = new SuccessResponseDto();
-    returnValue.message = `User (name: ${input.name}, email: ${input.email}) created Successfully`;
+    returnValue.message = `User (name: ${input.name}) created Successfully`;
     return returnValue;
   }
 

@@ -1,9 +1,7 @@
-import { IsEmail, IsString } from 'class-validator';
+import { UUID } from 'crypto';
 
 export class CreateUserDto {
-  @IsString()
   name: string;
 
-  @IsEmail()
-  email: string;
+  id: UUID;
 }
